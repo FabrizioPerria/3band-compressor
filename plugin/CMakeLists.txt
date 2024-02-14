@@ -1,22 +1,22 @@
 cmake_minimum_required(VERSION 3.22)
 
-project(YourPluginName VERSION 0.1.0) #TODO: change this to your plugin name
+project(3BandCompressor VERSION 0.1.0)
 
 juce_add_plugin(${PROJECT_NAME}
-    COMPANY xx #TODO: change this to your company name
+    COMPANY fp
     IS_SYNTH true
     NEEDS_MIDI_INPUT true
     COPY_PLUGIN_AFTER_BUILD true
     NEEDS_MIDI_OUTPUT FALSE
     PLUGIN_MANUFACTURER_CODE FABP
-    PLUGIN_CODE BS-1 #TODO: change this to your plugin code
+    PLUGIN_CODE CM-3
     FORMATS AU VST3 Standalone
     PRODUCT_NAME ${PROJECT_NAME}
-    COMPANY_NAME "xx" #TODO: change this to your company name
+    COMPANY_NAME "fp"
 )
 
-juce_add_binary_data(BinaryData 
-    SOURCES 
+juce_add_binary_data(BinaryData
+    SOURCES
         resources/volume.svg
 )
 
